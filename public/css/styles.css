@@ -1,0 +1,122 @@
+  body {
+  background-color: #2C2F33;
+}
+
+.info {
+  height: 100%;
+  width: 100%;
+  font-size: 65px;
+  text-align: center;
+  justify-content: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.desc {
+  font-size: 25px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: lightgray;
+  margin: 75px;
+}
+
+html {
+  color: white;
+}
+
+
+ 
+ #login{
+  display: block;
+  width: 90px;
+  text-decoration: none;
+  background: rgb(57, 148, 255);
+  transition: background 0.15s ease-out 0s;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 13px 14px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 20px;
+ }
+
+ #login:hover{
+  background: rgb(0, 118, 255);
+}
+
+ #graybtn{
+  display: block;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.15s ease-out 0s;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 13px 14px;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+ }
+
+ #graybtn:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 7%;
+}
+
+
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  user-select: none;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Calibri;
+  padding: 12px 20px;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#nav-items:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.button {
+  background-color: rgb(57, 148, 255);
+  color: white;
+  transition: background 0.15s ease-out 0s;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.button:hover{
+  background: rgb(0, 118, 255);
+}
+
+.nav-item {
+  list-style-type: none;
+  color: white;
+  padding: 6px;
+}
+
+.nav-item>a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-item>a:visited {
+  text-decoration: none;
+}
