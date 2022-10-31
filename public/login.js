@@ -64,7 +64,6 @@ let getUserLogin = () => {
 };
 
 let getUserGuilds = () => {
-    
     fetch('https://discord.com/api/users/@me/guilds', {
         headers: {
             authorization: `${tokenType} ${accessToken}`,
