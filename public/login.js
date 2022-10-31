@@ -77,19 +77,34 @@ let getUserGuilds = () => {
 };
 
 let createPage = (response) => {
-    let guilds = document.createElement('div');
-    guilds.innerText = 'Servers:';
-    document.body.appendChild(guilds);
-    for(const guild of response){
+    {
+      let guilds = document.createElement('div');
+      guilds.innerText = 'Servers:';
+      guilds.classList.add('container');
+      document.body.appendChild(guilds);
+      for(const guild of response){
         let perms = checkPerms(guild.permissions);
         console.log(perms);
         if(perms['generalAdministrator'] == true){
-            let g = document.createElement('p');
-            g.innerText += `${guild.name}`;
-            guilds.appendChild(g);   
+          let title =  document.createElement('p');
+          let g = document.createElement('div');
+          g.classList.add('card');
+          title.innerText += `${guild.name}`;
+          if(guild.icon != null){
+            let a = document.createElement('a');
+            a.href=`/config/${guild.id}`;
+            let img = document.createElement('img');
+            let src = `https://cdn.discordapp.com/icons/${guild.id}/${guild.icon}.png`;
+            img.src = src;
+            a.appendChild(img);
+            g.appendChild(a);
+          }
+          guilds.appendChild(title);
+          guilds.appendChild(g);
         }
+      }
     }
-};
+  };
 
 function checkPerms(e) {
     let guildPerms = {};
