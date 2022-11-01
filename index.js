@@ -10,7 +10,7 @@ let config = JSON.parse(fs.readFileSync('./config.json'))
 app.use(express.static(path.join(__dirname + '/public')));
 
 app.get('/', (request, response) => {
-    return response.sendFile('index.html', {root: '.'});
+    return response.sendFile('index.html', 'changelog.html', {root: '.'});
 });
 
 app.get('/changelog', (request, response) => {
