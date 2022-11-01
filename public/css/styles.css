@@ -136,14 +136,6 @@ html {
   object-fit: cover;
 }
 
-.container {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  font-family: Courier;
-  color: rgb(255, 255, 255);
-}
-
 .card {
   background-color: #000000;
   border-radius: 5px;

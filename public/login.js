@@ -80,7 +80,7 @@ let createPage = (response) => {
     {
       let guilds = document.createElement('div');
       guilds.innerText = 'Servers:';
-      guilds.classList.add('container');
+      guilds.classList.add('serverList');
       document.body.appendChild(guilds);
       for(const guild of response){
         let perms = checkPerms(guild.permissions);
