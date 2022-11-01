@@ -7,7 +7,7 @@ const app = express();
 app.use(express.static(path.join(__dirname + '/public')));
 
 app.get('/', (request, response) => {
-    return response.sendFile('index.html', {root: '.'});
+    return response.sendFile('index.html', 'changelog.html', {root: '.'});
 });
 
 app.listen(port, () => console.log(`App listening at http://localhost${port}`));
