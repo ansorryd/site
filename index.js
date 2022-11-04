@@ -13,9 +13,5 @@ app.get('/', (request, response) => {
     return response.sendFile('index.html', {root: '.'});
 });
 
-app.get('/contact', (request, response) => {
-    return response.sendFile('public/contact.html', {root: '.'});
-});
-
 console.clear()
 app.listen(config.port, () => console.log(`App listening at http://localhost:${config.port}`));
